@@ -21,23 +21,23 @@ const Projects = () => {
           linkDemo="https://anakena-hoteles.cl"
           tags={["Next.js", "React", "Tailwind", "Producción"]}
         />
-
-        {/* Proyecto Real Estate */}
-        <ProjectCard
-          src="/Pokemon.png"
-          title="Sistema Real Estate — Gestión Comercial"
-          description="Aplicación web orientada a gestión de clientes, seguimiento comercial y organización de leads. Implementa lógica CRUD y arquitectura frontend moderna."
-          linkDemo="https://TU-LINK-DEMO-AQUI.com"
-          tags={["React", "JavaScript", "CRUD", "Frontend"]}
-        />
-
+        
         {/* Proyecto PokeAPI */}
         <ProjectCard
           src="/Pokemon.png"
           title="PokeAPI Explorer — Consumo de API"
           description="Aplicación que consume la API pública de Pokémon, permitiendo búsqueda dinámica, visualización detallada y manejo de estados asíncronos."
-          linkDemo="https://TU-LINK-DEMO-AQUI.com"
+          linkDemo="https://pokeapireact-eb.netlify.app/#/"
           tags={["React", "API", "Fetch", "Async"]}
+        />
+
+        {/* Proyecto PokeAPI */}
+        <ProjectCard
+          src="/WeatherImage.jpg"
+          title="Weather App (Geolocation + API)"
+          description="Detecta ubicación del usuario y muestra clima actual (temp, viento, nubes, presión) con toggle °C/°F."
+          linkDemo="https://ebweatherappinreact.netlify.app/"
+          tags={["React, Fetch/Axios, WeatherAPI, Netlify"]}
         />
 
       </div>
