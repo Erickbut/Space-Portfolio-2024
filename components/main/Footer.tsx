@@ -1,69 +1,66 @@
-import React from 'react';
+"use client";
+
+import React from "react";
 import {
-    RxDiscordLogo,
-    RxGithubLogo,
-    RxInstagramLogo,
-    RxTwitterLogo,
-    RxLinkedinLogo,
+  RxGithubLogo,
+  RxLinkedinLogo,
+  RxInstagramLogo,
 } from "react-icons/rx";
 
-import { FaYoutube } from "react-icons/fa";
 const Footer = () => {
-    return (
-        <div className='w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]'>
-            <div className='w-full flex flex-col items-center justify-center m-auto'>
-                <div className='w-full h-full flex flex-row items-center justify-around flex-wrap'>
+  return (
+    <footer className="w-full bg-transparent text-gray-300 border-t border-[#7042f861] mt-20">
+      <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col items-center gap-6">
 
-                    <div className='min-w-[200px] h-auto flex flex-col items-center justify-start'>
-                        <div className='font-bold text-[16px]'>Community</div>
-                        <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                            <FaYoutube />
-                            <span className='text-[15px] ml-[6px]'>Youtube</span>
-                        </p>
-                        <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                            <RxGithubLogo />
-                            <span className='text-[15px] ml-[6px]'>Github</span>
-                        </p>
-                        <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                            <RxDiscordLogo />
-                            <span className='text-[15px] ml-[6px]'>Discord</span>
-                        </p>
-                    </div>
-                    <div className='min-w-[200px] h-auto flex flex-col items-center justify-start'>
-                        <div className='font-bold text-[16px]'>Social Media</div>
-                        <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                            <FaYoutube />
-                            <span className='text-[15px] ml-[6px]'>Youtube</span>
-                        </p>
-                        <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                            <RxGithubLogo />
-                            <span className='text-[15px] ml-[6px]'>Github</span>
-                        </p>
-                        <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                            <RxDiscordLogo />
-                            <span className='text-[15px] ml-[6px]'>Discord</span>
-                        </p>
-                    </div>
-                    <div className='min-w-[200px] h-auto flex flex-col items-center justify-start'>
-                        <div className='font-bold text-[16px]'>About</div>
-                        <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                            <span className='text-[15px] ml-[6px]'>Become Sponsor</span>
-                        </p>
-                        <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                            <span className='text-[15px] ml-[6px]'>Learning About Me</span>
-                        </p>
-                        <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                            <span className='text-[15px] ml-[6px]'>erickbutron1@gmail.com</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div className='mb-[20px] text-[15px] text-center'>
-                    &copy; WebAplications 2024 Inc. All rights reserved
-                </div>
-            </div>
+        {/* Name / Role */}
+        <div className="text-center">
+          <h2 className="text-xl font-semibold text-white">
+            Erick Butrón
+          </h2>
+          <p className="text-sm text-gray-400 mt-1">
+            Full Stack Developer · Next.js · React · Node.js
+          </p>
         </div>
-    )
-}
 
-export default Footer
+        {/* Social Icons */}
+        <div className="flex items-center gap-6 text-xl">
+          <a
+            href="https://github.com/Erickbut"
+            target="_blank"
+            className="hover:text-white transition duration-300 hover:scale-110"
+          >
+            <RxGithubLogo />
+          </a>
+
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            className="hover:text-white transition duration-300 hover:scale-110"
+          >
+            <RxLinkedinLogo />
+          </a>
+
+          <a
+            href="https://www.instagram.com/erick.but/"
+            target="_blank"
+            className="hover:text-white transition duration-300 hover:scale-110"
+          >
+            <RxInstagramLogo />
+          </a>
+        </div>
+
+        {/* Email */}
+        <div className="text-sm text-gray-400">
+          erickbutron1@gmail.com
+        </div>
+
+        {/* Copyright */}
+        <div className="text-xs text-gray-500 text-center pt-4 border-t border-[#7042f830] w-full">
+          © {new Date().getFullYear()} Erick Butrón. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -77,7 +77,7 @@ const HeroContent = () => {
 
           <motion.a
             variants={slideInFromLeft(1)}
-            href="/ATS_CV_ES.pdf"
+            href="/CV_ESP_EB.pdf"
             download
             className="py-2 px-5 border border-purple-500 text-white rounded-lg hover:bg-purple-600/20 transition cursor-pointer"
           >
@@ -86,7 +86,7 @@ const HeroContent = () => {
 
           <motion.a
             variants={slideInFromLeft(1)}
-            href="/ATS_CV_ENG.pdf"
+            href="/CV_ENG_EB.pdf"
             download
             className="py-2 px-5 border border-cyan-500 text-white rounded-lg hover:bg-cyan-600/20 transition cursor-pointer"
           >
